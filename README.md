@@ -56,7 +56,7 @@ Search things like `kdrama 2025`, `best horror movies` or `what to watch` and ge
    - Click the green **Code** button on this repository, then **Download ZIP**, and extract it
    - or clone it:
      ```bash
-     git clone https://github.com/<your-username>/WhatToWatch-Extension.git
+     git clone https://github.com/abdulhayeekamboh/WhatToWatch-Extension.git
      ```
 2. Open your browser's extensions page:
 
