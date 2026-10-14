@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "What to Watch (Google-style)",
+  "version": "1.0.0",
+  "description": "Brings back Google's 'What to Watch' showcase: genre filters, year/language lists (e.g. 'kdrama 2025') and a full details panel for every title.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.themoviedb.org/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "What to Watch", "default_icon": { "48": "icons/icon48.png" } },
+  "options_page": "options.html",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "content_scripts": [{
+    "matches": [
+      "https://www.google.com/search*", "https://www.google.com.pk/search*",
+      "https://www.google.co.in/search*", "https://www.google.co.uk/search*",
+      "https://www.google.ca/search*", "https://www.google.com.au/search*",
+      "https://www.google.ae/search*", "https://www.google.com.sa/search*",
+      "https://www.google.de/search*", "https://www.google.fr/search*",
+      "https://www.google.co.kr/search*", "https://www.google.co.jp/search*"
+    ],
+    "js": ["core.js", "content.js"],
+    "css": ["core.css"],
+    "run_at": "document_idle"
+  }]
+}

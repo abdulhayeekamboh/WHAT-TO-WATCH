@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What to Watch</title><link rel="stylesheet" href="core.css">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font: 14px Roboto, Arial, sans-serif; background: #fff; color: #1f1f1f; }
+  @media (prefers-color-scheme: dark) { body { background: #202124; color: #e8eaed; } }
+  header { position: sticky; top: 0; z-index: 5; display: flex; gap: 16px; align-items: center; padding: 12px 24px; background: inherit; border-bottom: 1px solid var(--wtw-line, #dadce0); }
+  header h1 { font-size: 22px; font-weight: 400; margin: 0; white-space: nowrap; }
+  form { flex: 1; max-width: 640px; }
+  input { width: 100%; border: 1px solid var(--wtw-line, #dadce0); border-radius: 24px; padding: 11px 20px; font: inherit; background: var(--wtw-bg, #fff); color: inherit; }
+  input:focus { outline: 2px solid #1a73e8; }
+  main { padding: 12px 24px 40px; max-width: 1400px; margin: 0 auto; }
+  a.s { margin-left: auto; color: #1a73e8; text-decoration: none; }
+</style></head>
+<body class="wtw-root" style="border:0;border-radius:0;margin:0;max-width:none;padding:0">
+<header><h1>What to Watch</h1>
+  <form id="f"><input id="q" placeholder="Try: kdrama 2025, best horror movies, turkish drama romance…" autocomplete="off"></form>
+  <a class="s" href="options.html">Settings</a></header>
+<main><div id="app"></div></main>
+<script src="core.js"></script><script src="app.js"></script>
+</body></html>

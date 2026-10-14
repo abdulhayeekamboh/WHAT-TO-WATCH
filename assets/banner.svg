@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="What to Watch browser extension">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#10224d"/>
+      <stop offset="1" stop-color="#1a73e8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="380" rx="24" fill="url(#bg)"/>
+  <circle cx="1080" cy="40" r="170" fill="#ffffff" opacity="0.05"/>
+  <circle cx="120" cy="360" r="140" fill="#ffffff" opacity="0.04"/>
+
+  <!-- poster cards -->
+  <g transform="translate(760 70)">
+    <rect x="0"   y="40" width="120" height="180" rx="12" fill="url(#card)" stroke="#fff" stroke-opacity="0.25"/>
+    <rect x="140" y="10" width="120" height="180" rx="12" fill="url(#card)" stroke="#fff" stroke-opacity="0.25"/>
+    <rect x="280" y="60" width="120" height="180" rx="12" fill="url(#card)" stroke="#fff" stroke-opacity="0.25"/>
+    <g fill="#fff" fill-opacity="0.85">
+      <path d="M48 112l30 18-30 18z"/>
+      <path d="M188 82l30 18-30 18z"/>
+      <path d="M328 132l30 18-30 18z"/>
+    </g>
+    <g fill="#f9ab00" font-family="Arial, sans-serif" font-size="14" font-weight="700">
+      <text x="14" y="206">★ 8.4</text>
+      <text x="154" y="176">★ 7.9</text>
+      <text x="294" y="226">★ 8.8</text>
+    </g>
+  </g>
+
+  <!-- icon -->
+  <rect x="70" y="90" width="84" height="84" rx="20" fill="#1a73e8"/>
+  <path d="M100 114l34 18-34 18z" fill="#fff"/>
+
+  <!-- text -->
+  <g font-family="'Segoe UI', Roboto, Arial, sans-serif" fill="#fff">
+    <text x="70" y="240" font-size="56" font-weight="700">What to Watch</text>
+    <text x="70" y="282" font-size="22" fill="#cfe0ff">Google's movie &amp; TV showcase, right inside your search results.</text>
+    <text x="70" y="322" font-size="16" fill="#9ec0ff">Genre filters  •  Year &amp; language lists  •  Full details panel  •  Powered by TMDB</text>
+  </g>
+</svg>

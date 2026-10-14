@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What to Watch – Settings</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.5 Roboto, Arial, sans-serif; max-width: 560px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-weight: 400; } label { display: block; margin: 18px 0 6px; font-weight: 500; }
+  input, select, button { font: inherit; padding: 9px 12px; border-radius: 8px; border: 1px solid #9aa0a6; width: 100%; box-sizing: border-box; }
+  button { width: auto; background: #1a73e8; color: #fff; border: 0; padding: 10px 24px; border-radius: 20px; cursor: pointer; margin-top: 20px; }
+  ol { padding-left: 20px; } a { color: #1a73e8; } #ok { color: #188038; margin-left: 12px; }
+</style></head><body>
+<h1>What to Watch settings</h1>
+<p>The extension gets movie and TV data from TMDB. It's free and takes about two minutes:</p>
+<ol>
+  <li>Create a free account at <a href="https://www.themoviedb.org/signup" target="_blank">themoviedb.org</a>.</li>
+  <li>Open <a href="https://www.themoviedb.org/settings/api" target="_blank">Settings → API</a> and request an API key (choose “Personal use”).</li>
+  <li>Paste the <b>API Key</b> (or the long <b>Read Access Token</b>) below.</li>
+</ol>
+<label for="key">TMDB API key</label><input id="key" autocomplete="off" spellcheck="false">
+<label for="region">Region for “where to watch” and age ratings</label><select id="region"></select>
+<button id="save">Save</button><span id="ok"></span>
+<script src="options.js"></script></body></html>
